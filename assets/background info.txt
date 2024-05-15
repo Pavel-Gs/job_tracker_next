@@ -1,0 +1,7 @@
+background images must be:
+1) in the publick folder
+2) the path should be ../public/assets/images/banner.svg
+3) therefore, the name of the image must be "banner" with the extension "svg"
+
+example: 
+<div className="bg-cover bg-center h-screen bg-[url('../public/assets/images/banner.svg')]">

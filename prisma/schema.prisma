@@ -1,0 +1,58 @@
+// PRISMA SCHEMA FILE (refer to: https://pris.ly/d/prisma-schema)
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    url = env("DATABASE_URL")
+
+    // old databse (not in se)
+    //provider = "mysql" // for MySQL database hostings (such as planetscale.com)
+
+    // for public use
+    provider = "postgresql" // for PostgreSQL database hostings (such as render.com)
+
+    // for company use
+    //provider = "cockroachdb" // for PostgreSQL database hostings (such as cockroachlabs.cloud)
+}
+
+model Job {
+    id               String   @id @default(uuid())
+    createdAt        DateTime @default(now())
+    updatedAt        DateTime @updatedAt
+    organizationId   String
+    organizationName String
+    clerkId          String
+    createdBy        String
+    updatedBy        String
+    job              String
+    plan             String
+    lot              String
+    client           String
+    phone            String
+    email            String
+    company          String
+    address          String
+    status           String
+    type             String
+    latitude         Float
+    longitude        Float
+}
+
+model TimeSheets {
+    id               String   @id @default(uuid())
+    createdAt        DateTime @default(now())
+    updatedAt        DateTime @updatedAt
+    organizationId   String
+    organizationName String
+    clerkId          String
+    createdBy        String
+    updatedBy        String
+    job              String
+    hours            Float
+    description      String
+    for              String
+    date             DateTime @default(now())
+    type             String
+}

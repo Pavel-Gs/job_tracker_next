@@ -1,0 +1,1 @@
+favicon must be placed in the "app" folder
