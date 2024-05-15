@@ -11,10 +11,10 @@ datasource db {
     //provider = "mysql" // for MySQL database hostings (such as planetscale.com)
 
     // for public use
-    provider = "postgresql" // for PostgreSQL database hostings (such as render.com)
+    //provider = "postgresql" // for PostgreSQL database hostings (such as render.com)
 
     // for company use
-    //provider = "cockroachdb" // for PostgreSQL database hostings (such as cockroachlabs.cloud)
+    provider = "cockroachdb" // for PostgreSQL database hostings (such as cockroachlabs.cloud)
 }
 
 model Job {
