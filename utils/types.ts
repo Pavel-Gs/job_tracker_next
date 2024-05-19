@@ -52,7 +52,7 @@ export const createAndEditJobSchema = z.object({
 
 	lot: z.string()
 		.min(1, { message: "Lot number must be at least 1 characters long" })
-		.max(25, { message: "Lot number can't be longer than 25 characters" }),
+		.max(50, { message: "Lot number can't be longer than 50 characters" }),
 
 	client: z.string()
 		.min(2, { message: "Client's name must be at least 2 characters long" })

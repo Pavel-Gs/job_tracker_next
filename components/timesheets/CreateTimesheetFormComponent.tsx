@@ -52,7 +52,7 @@ export const CreateTimesheetFormComponent = () => {
 			for: forField,
 			date: new Date(formattedDate.split(',').join('')), // Convert string to Date
 			//date: new Date().toISOString().split('T')[0],
-			type: TimesheetType.Field
+			type: TimesheetType.Office
 		}
 	})
 	// update user.firstName, when new user logs in
