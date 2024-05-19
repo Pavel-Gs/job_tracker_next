@@ -29,7 +29,7 @@ export const JobCardComponent = ({ job }: { job: JobDescription }) => {
 
 	return (
 		<Card className='bg-muted text-right shadow-md'>
-			<Badge className='w-32 justify-center bg-muted-foreground'>
+			<Badge className='w-32 justify-center bg-muted-foreground text-secondary'>
 				{job.status === 'new' && (<span className='flex'> <Star className='mx-1 w-4 h-4 text-yellow-500' /> {job.status} </span>)}
 				{job.status === 'active' && (<span className='flex'> <RadioTower className='mx-1 w-4 h-4 text-green-500' /> {job.status} </span>)}
 				{job.status === 'finished' && (<span className='flex'> <CheckCheck className='mx-1 w-4 h-4' /> {job.status} </span>)}

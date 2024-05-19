@@ -66,7 +66,7 @@ const Carousel = React.forwardRef<
         axis: orientation === "horizontal" ? "x" : "y",
       },
       //plugins					//"plugins" originally was uncommented
-	  [Autoplay({delay: 7000})] // it seems, autoplay plugin works only when inserted directly to the Shadcn-UI component file
+	  //[Autoplay({delay: 7000})] // it seems, autoplay plugin works only when inserted directly to the Shadcn-UI component file
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)

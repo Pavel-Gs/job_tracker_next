@@ -33,7 +33,7 @@ export default function Home() {
 			<section className='max-w-screen-xl mx-auto'>
 				<div className='flex flex-row justify-between'>
 					<h1 className='text-3xl font-bold md:text-6xl pr-2'>project <span className='text-primary'>tracker</span></h1>
-					<Button asChild className='p-6'><Link href='/all-jobs'>LOGIN</Link></Button>
+					<Button asChild className='p-6 outline outline-1'><Link href='/all-jobs'>LOGIN</Link></Button>
 				</div>
 				<p className='mt-4 text-justify'>This application combines the functionalities of a job tracker, time-sheets, map and project database, providing a comprehensive solution for efficient project management. With its user-friendly interface and robust features, it streamlines workflow, enhances collaboration, and ensures accurate tracking of tasks and resources.</p>
 			</section>
@@ -47,7 +47,7 @@ export default function Home() {
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
 								<Image src={Img8} alt="see all your projects on a global map" />
-								<div className='flex items-center bg-primary shadow-lg text-secondary text-xl rounded-b-md mt-8 p-4 opacity-80' style={{boxShadow: '0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary shadow-lg text-xl rounded-b-md mt-8 p-4 opacity-80' style={{boxShadow: '0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />See all your projects on a global map
 								</div>
 							</div>
@@ -55,7 +55,7 @@ export default function Home() {
 
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
-								<div className='flex items-center bg-primary text-secondary text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />Fill up the form and create new project card
 								</div>
 								<Image src={Img1} alt="fill up the form and create new project card" />
@@ -65,7 +65,7 @@ export default function Home() {
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
 								<Image src={Img2} alt="search jobs based on job#, job status, job type, plan#, company name, etc..." />
-								<div className='flex items-center bg-primary text-secondary text-xl p-4 opacity-80' style={{boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.5), 0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary text-xl p-4 opacity-80' style={{boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.5), 0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />Search jobs based on job#, job status, job type, plan#, company name, etc...
 								</div>
 							</div>
@@ -73,7 +73,7 @@ export default function Home() {
 
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
-								<div className='flex items-center bg-primary shadow-lg text-secondary text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary shadow-lg text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />See the exact location on the map, modify all form inputs as needed
 								</div>
 								<Image src={Img3} alt="see the exact location on the map, modify all form inputs as needed" />
@@ -83,7 +83,7 @@ export default function Home() {
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
 								<Image src={Img4} alt="view all time-sheets for corresponding job" />
-								<div className='flex items-center bg-primary shadow-lg text-secondary text-xl mt-8 p-4 opacity-80' style={{boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.5), 0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary shadow-lg text-xl mt-8 p-4 opacity-80' style={{boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.5), 0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />View all time-sheets for corresponding job
 								</div>
 							</div>
@@ -91,7 +91,7 @@ export default function Home() {
 
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
-								<div className='flex items-center bg-primary shadow-lg text-secondary text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary shadow-lg text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />Create new timesheets for all members of your organization
 								</div>
 								<Image src={Img5} alt="create new timesheets for all members of your organization" />
@@ -101,7 +101,7 @@ export default function Home() {
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
 								<Image src={Img6} alt="view your daily hours" />
-								<div className='flex items-center bg-primary shadow-lg text-secondary text-xl mt-8 p-4 opacity-80' style={{boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.5), 0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary shadow-lg text-xl mt-8 p-4 opacity-80' style={{boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.5), 0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />Review your daily hours
 								</div>
 							</div>
@@ -110,7 +110,7 @@ export default function Home() {
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
 								<Image src={Img7} alt="search all time-sheets based on job#, work type, description and date range" />
-								<div className='flex items-center bg-primary shadow-lg text-secondary text-xl mt-8 p-4 opacity-80' style={{boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.5), 0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary shadow-lg text-xl mt-8 p-4 opacity-80' style={{boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.5), 0px -5px 10px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />Search all time-sheets based on job#, work type, description and date range
 								</div>
 							</div>
@@ -118,7 +118,7 @@ export default function Home() {
 
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
-								<div className='flex items-center bg-primary shadow-lg text-secondary text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary shadow-lg text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />Check and analyze your annual job data
 								</div>
 								<Image src={Img9} alt="check and analyze your annual job data" />
@@ -127,7 +127,7 @@ export default function Home() {
 
 						<CarouselItem className='basis-full'>
 							<div className='flex flex-col'>
-								<div className='flex items-center bg-primary shadow-lg text-secondary text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
+								<div className='flex items-center bg-primary shadow-lg text-xl mb-8 p-4 opacity-80' style={{boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5)'}}>
 									<MessageSquareDot className='mr-4' />View your annual time-sheet statistics
 								</div>
 								<Image src={Img10} alt="view your annual time-sheet statistics" />
