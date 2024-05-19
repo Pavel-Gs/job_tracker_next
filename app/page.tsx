@@ -33,7 +33,7 @@ export default function Home() {
 			<section className='max-w-screen-xl mx-auto'>
 				<div className='flex flex-row justify-between'>
 					<h1 className='text-3xl font-bold md:text-6xl pr-2'>project <span className='text-primary'>tracker</span></h1>
-					<Button asChild className='p-6 outline outline-1'><Link href='/all-jobs'>LOGIN</Link></Button>
+					<Button asChild className='p-6 shadow-md font-bold'><Link href='/all-jobs'>LOGIN</Link></Button>
 				</div>
 				<p className='mt-4 text-justify'>This application combines the functionalities of a job tracker, time-sheets, map and project database, providing a comprehensive solution for efficient project management. With its user-friendly interface and robust features, it streamlines workflow, enhances collaboration, and ensures accurate tracking of tasks and resources.</p>
 			</section>

@@ -16,6 +16,7 @@ import Image from 'next/image'
 // IMPORT CUSTOM IMAGES
 import LogoImg from '../assets/logo.png'
 import LogoIOA from '../assets/logoIOA.png'
+import LogoPG from '../assets/logo.gif'
 
 
 export const SidebarComponent = () => {
@@ -32,6 +33,9 @@ export const SidebarComponent = () => {
 			break
 		case "IOA":
 			sidebarContent = (<Image src={LogoIOA} alt="IOA logo" className='mx-auto w-auto max-h-14 sticky top-4' />)
+			break
+		case "geomatics-consulting":
+			sidebarContent = (<Image src={LogoPG} alt="IOA logo" className='mx-auto w-auto max-h-20 sticky top-4' />)
 			break
 		default:
 			sidebarContent = (<Image src={LogoImg} alt="default logo" className='mx-auto w-auto max-h-14 sticky top-4' />)

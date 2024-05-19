@@ -39,7 +39,7 @@ export const TimesheetCardComponent = ({ timesheet }: { timesheet: TimesheetDesc
 	return (
 		<Card className='bg-muted text-right shadow-md'>
 			{timesheet.for !== timesheet.createdBy ? (
-				<Badge className='w-32 justify-center bg-muted-foreground'>
+				<Badge className='w-32 justify-center bg-muted-foreground text-secondary'>
 					<TimesheetInfoComponent icon={<Users className='w-4 h-4' />} text={`for: ${timesheet.for}`} />
 				</Badge>) : null
 			}
