@@ -16,7 +16,7 @@ import Image from 'next/image'
 // IMPORT CUSTOM IMAGES
 import LogoImg from '../assets/logo.png'
 import LogoIOA from '../assets/logoIOA.png'
-import LogoPG from '../assets/logo.gif'
+import LogoPG from '../assets/logoPG.png'
 
 
 export const SidebarComponent = () => {
