@@ -38,7 +38,8 @@ export enum JobType {
 	Posting = "posting",
 	PlStk = "property line staking",
 	Monitoring = "monitoring",
-	FullPackage = "full package"
+	FullPackage = "full package",
+	Strata = "strata"
 }
 export const createAndEditJobSchema = z.object({
 	job: z.string()
@@ -70,7 +71,7 @@ export const createAndEditJobSchema = z.object({
 
 	address: z.string()
 		.min(5, { message: "Address number must be at least 5 characters long" })
-		.max(35, { message: "Address can't be longer than 35 characters" }),
+		.max(50, { message: "Address can't be longer than 35 characters" }),
 
 	latitude: z.number()
 		.min(48, { message: "This latitude is outside of BC" })
