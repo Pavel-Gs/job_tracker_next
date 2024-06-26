@@ -48,7 +48,7 @@ export const createAndEditJobSchema = z.object({
 		.transform((value) => value.trim()),
 
 	plan: z.string()
-		.min(3, { message: "Plan number must be at least 3 characters long" })
+		.min(2, { message: "Plan number must be at least 3 characters long" })
 		.max(25, { message: "Plan number can't be longer than 25 characters" }),
 
 	lot: z.string()
@@ -67,7 +67,7 @@ export const createAndEditJobSchema = z.object({
 
 	company: z.string()
 		.min(3, { message: "Client's company name must be at least 3 characters long" })
-		.max(35, { message: "Client's company name can't be longer than 35 characters" }),
+		.max(50, { message: "Client's company name can't be longer than 35 characters" }),
 
 	address: z.string()
 		.min(5, { message: "Address number must be at least 5 characters long" })
