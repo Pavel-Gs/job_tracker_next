@@ -115,7 +115,7 @@ export const createAndEditTimesheetSchema = z.object({
 
 	hours: z.number().min(0.25, {
 		message: "The minimum value is 15 minutes (0.25 hour)"
-	}).max(12, {
+	}).max(15, {
 		message: "You are working too hard! Take a break"
 	}).refine((value) => {
 		const decimalCount = (value.toString().split('.')[1] || '').length;
