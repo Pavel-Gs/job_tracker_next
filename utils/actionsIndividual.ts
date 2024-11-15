@@ -36,17 +36,29 @@ export const getIndividualTimesheetsAction = async ({ page = 1, limit = 50 }: Ge
 
 		// Apply filter for the current date
 		const today = new Date();
-		const todayString = today.toISOString().substring(0, 10); // Extract YYYY-MM-DD
-		const todayCustom = todayString + "T07:00:00.000Z" // manually add THH:MM:SS part (data-base format)
+		//const todayString = today.toISOString().substring(0, 10); // Extract YYYY-MM-DD
+		//const todayCustom = todayString + "T00:00:00.000Z" // manually add THH:MM:SS part (data-base format)
+		const startOfToday = new Date(today.setUTCHours(0, 0, 0, 0)); // Start of today in UTC
+		const endOfToday = new Date(today.setUTCHours(23, 59, 59, 999)); // End of today in UTC
 
 		if (userName && user?.privateMetadata.orgId) { // Apply the filter only if the user name and orgId are available
 			whereClause = {
 				for: userName,
 				organizationId: user.privateMetadata.orgId,
-				date: todayCustom, // Filter for the current date
+				//date: todayCustom, // Filter for the current date
+				createdAt: {
+					gte: startOfToday,
+					lte: endOfToday
+				}
 			}
 		} else { // display time-sheets associated with the user only, if organization is not assigned; orgId and orgName are required in CreateJobFormComponent onSubmit())
-			whereClause = { clerkId: userId }
+			whereClause = {
+				clerkId: userId,
+				createdAt: {
+					gte: startOfToday,
+					lte: endOfToday
+				}
+			}
 		}
 
 		const skip = (page - 1) * limit

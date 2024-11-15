@@ -44,12 +44,12 @@ export enum JobType {
 export const createAndEditJobSchema = z.object({
 	job: z.string()
 		.min(3, { message: "Job number must be at least 3 characters long" })
-		.max(15, { message: "Job number can't be longer than 15 characters" })
+		.max(30, { message: "Job number can't be longer than 30 characters" })
 		.transform((value) => value.trim()),
 
 	plan: z.string()
 		.min(2, { message: "Plan number must be at least 3 characters long" })
-		.max(25, { message: "Plan number can't be longer than 25 characters" }),
+		.max(50, { message: "Plan number can't be longer than 50 characters" }),
 
 	lot: z.string()
 		.min(1, { message: "Lot number must be at least 1 characters long" })
@@ -57,16 +57,16 @@ export const createAndEditJobSchema = z.object({
 
 	client: z.string()
 		.min(2, { message: "Client's name must be at least 2 characters long" })
-		.max(35, { message: "Client's name can't be longer than 35 characters" }),
+		.max(50, { message: "Client's name can't be longer than 50 characters" }),
 
 	phone: z.string()
-		.regex(/^\d{10}$/, { message: "Phone number must consist of exactly 10 digits" }),
+		.regex(/^\d{10}$/, { message: "Phone number must consist of exactly 10 digits only" }),
 
 	email: z.string()
 		.email({ message: "This is not a valid email" }),
 
 	company: z.string()
-		.min(3, { message: "Client's company name must be at least 3 characters long" })
+		.min(2, { message: "Client's company name must be at least 2 characters long" })
 		.max(50, { message: "Client's company name can't be longer than 35 characters" }),
 
 	address: z.string()
@@ -126,10 +126,14 @@ export const createAndEditTimesheetSchema = z.object({
 
 	description: z.string().min(2, {
 		message: "Description number must be at least 2 characters long"
+	}).max(100, {
+		message: "Description can't be longer than 100 characters"
 	}),
 
 	for: z.string().min(2, {
 		message: "This field must be at least 2 characters long"
+	}).max(50, {
+		message: "This field can't be longer than 50 characters"
 	}),
 
 	date: z.date(),

@@ -35,8 +35,8 @@ export const CreateJobFormComponent = () => {
 			email: '',
 			company: '',
 			address: '',
-			latitude: 0,
-			longitude: 0,
+			latitude: 49,
+			longitude: -122,
 			status: JobStatus.New,
 			type: JobType.TopoLegal
 		}
